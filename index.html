@@ -1,1 +1,117 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>My Projects</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <h1>Welcome to My Projects</h1>\n    </header>\n    <main>\n        <section id="projects-gallery">\n            <h2>Project Gallery</h2>\n            <div class="project-card">\n                <img src="project1-thumbnail.jpg" alt="Project 1">\n                <h3>Project 1 Title</h3>\n                <p>Short description of Project 1.</p>\n            </div>\n            <div class="project-card">\n                <img src="project2-thumbnail.jpg" alt="Project 2">\n                <h3>Project 2 Title</h3>\n                <p>Short description of Project 2.</p>\n            </div>\n            <div class="project-card">\n                <img src="project3-thumbnail.jpg" alt="Project 3">\n                <h3>Project 3 Title</h3>\n                <p>Short description of Project 3.</p>\n            </div>\n            <div class="project-card">\n                <img src="project4-thumbnail.jpg" alt="Project 4">\n                <h3>Project 4 Title</h3>\n                <p>Short description of Project 4.</p>\n            </div>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 Wiedevs. All rights reserved.</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redesigned Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .emoji {
+            font-size: 50px;
+        }
+        .title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .description {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .tags {
+            margin-top: 10px;
+        }
+        .tag {
+            background-color: #3a3a3a;
+            border-radius: 5px;
+            color: #ffffff;
+            padding: 5px 10px;
+            margin: 2px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to My Projects</h1>
+    <div class="container">
+        <div class="card">
+            <div class="emoji">🌐</div>
+            <div class="title">Project One</div>
+            <div class="description">A cool project about web development.</div>
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="emoji">📱</div>
+            <div class="title">Project Two</div>
+            <div class="description">An innovative mobile app project.</div>
+            <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="emoji">📊</div>
+            <div class="title">Project Three</div>
+            <div class="description">Data visualization project.</div>
+            <div class="tags">
+                <span class="tag">D3.js</span>
+                <span class="tag">Python</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="emoji">🎮</div>
+            <div class="title">Project Four</div>
+            <div class="description">Awesome game development.</div>
+            <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="emoji">☁️</div>
+            <div class="title">Project Five</div>
+            <div class="description">Cloud computing project.</div>
+            <div class="tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="emoji">🧩</div>
+            <div class="title">Project Six</div>
+            <div class="description">A unique puzzle game.</div>
+            <div class="tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
